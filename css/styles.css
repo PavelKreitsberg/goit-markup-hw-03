@@ -1,11 +1,10 @@
 :root {
   --main-background-color: #ffffff;
   --second-background-color: #2f303a;
-  --third-background-color: #F5F4FA;
+  --third-background-color: #f5f4fa;
   --accent-color: #2196f3;
   --main-content-text-color: #212121;
   --second-content-text-color: #757575;
-  --
 }
 
 /* Global */
@@ -24,7 +23,9 @@ ul {
   padding: 0;
   margin: 0;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0 0;
 }
 .container {
@@ -36,8 +37,6 @@ h1, h2, h3 {
 }
 
 /* Header */
-
-
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -102,7 +101,6 @@ h1, h2, h3 {
 
 /* Advantages section */
 
-
 .advantages-section-title {
   font-size: 14px;
   font-weight: 700;
@@ -118,7 +116,6 @@ h1, h2, h3 {
   line-height: 1.71;
   text-align: left;
   letter-spacing: 0.03em;
-
 }
 
 /* What we do section */
@@ -180,9 +177,7 @@ h1, h2, h3 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-
-
-/* Portfolio */  /* Filter */
+/* Portfolio */ /* Filter */
 
 .button-filter {
   background-color: var(--third-background-color);
