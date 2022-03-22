@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --main-content-text-color: #212121;
   --second-content-text-color: #757575;
+  --card-border-color: #eeeeee;
 }
 
 /* Global */
@@ -25,7 +26,8 @@ ul {
 }
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0 0;
 }
 .container {
@@ -33,11 +35,36 @@ h3 {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid tomato;
 }
 
 /* Header */
-
+.header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 15px 30px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.site-nav {
+  width: 295px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 95px;
+}
+.contacts {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -76,6 +103,7 @@ h3 {
   background-color: var(--second-background-color);
   text-align: center;
   padding: 200px;
+  margin-bottom: 95px;
 }
 .hero-title {
   color: var(--main-background-color);
@@ -89,6 +117,8 @@ h3 {
   display: inline-block;
   padding: 10px 32px;
   border-radius: 4px;
+  border: none;
+  outline: none;
   background-color: var(--accent-color);
   color: var(--main-background-color);
   font-family: inherit;
@@ -100,8 +130,23 @@ h3 {
 }
 
 /* Advantages section */
-
+.advantages-section {
+  margin-bottom: 95px;
+}
+.advantages-section-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.advantages-section-item {
+  display: inline-block;
+  max-width: 270px;
+}
+.section-title.advantages {
+  display: none;
+}
 .advantages-section-title {
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
@@ -120,21 +165,50 @@ h3 {
 
 /* What we do section */
 
-.works-section-title {
+.works-section .container {
+  margin-bottom: 95px;
+}
+
+.section-title.works {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.our-works-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Our team section */
 
 .our-team-section {
   background-color: var(--third-background-color);
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.our-team-section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.our-team-section-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .our-team-section-list-item {
   background-color: var(--main-background-color);
-  width: 270px;
+  padding-bottom: 30px;
+  border-radius: 4px;
+}
+.our-team-section-photo {
+  margin-bottom: 30px;
 }
 .our-team-member-name {
   font-weight: 500;
@@ -142,6 +216,7 @@ h3 {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 10px;
 }
 .our-team-member-position {
   color: var(--second-content-text-color);
@@ -156,18 +231,24 @@ h3 {
 
 .footer {
   background-color: var(--second-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo.bottom {
+  display: inline-block;
   color: var(--main-background-color);
+  margin-bottom: 20px;
 }
 .adress-contacts-link,
 .adress-location {
+  display: inline-block;
   color: var(--main-background-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.46;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .adress-contacts-link:hover,
 .adress-contacts-link:focus {
@@ -179,13 +260,33 @@ h3 {
 
 /* Portfolio */ /* Filter */
 
+.container.portfolio {
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+.our-projects-section-title {
+  display: none;
+}
+.our-projects-button-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 610px;
+  margin: 0px auto 34px auto;
+}
+
 .button-filter {
+  display: inline-block;
   background-color: var(--third-background-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
   cursor: pointer;
 }
 .button-filter:hover,
@@ -195,7 +296,16 @@ h3 {
 }
 
 /* Our projects */
-
+.our-projects-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our-projects-list-item-text {
+  margin: 20px auto 20px;
+  width: 320px;
+}
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -212,5 +322,10 @@ h3 {
   text-align: left;
 }
 .our-projects-list-item {
+  display: inline-block;
   width: 370px;
+  margin-bottom: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--card-border-color);
 }
