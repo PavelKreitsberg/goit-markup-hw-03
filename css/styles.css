@@ -46,24 +46,20 @@ p {
 }
 .nav {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 .site-nav {
-  width: 295px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 95px;
+  margin-right: 330px;
 }
 .contacts {
-  width: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: auto;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -72,9 +68,18 @@ p {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 95px;
 }
 .logo-mod-color {
   color: var(--accent-color);
+}
+.site-nav-item,
+.contacts-item {
+  margin-right: 50px;
+}
+.site-nav-item:last-child,
+.contacts-item:last-child {
+  margin-right: 0;
 }
 
 .site-nav-link,
